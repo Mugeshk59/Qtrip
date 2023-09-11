@@ -9,6 +9,12 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
 </head>
 
@@ -18,20 +24,139 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-   <nav></nav> 
+   <!-- <nav>
 
+   </nav>  -->
+   <nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+      <h2>QTrip</h2>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarItems"
+        type="button"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse justify-content-end"
+        id="navbarItems"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/adventures/index.html" class="nav-link">
+              Explore
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
+  <header>
+    <div class="hero-image d-flex flex-column justify-content-center align-items-center text-white text-center">
+    <div class="container">
+      <h1>Welcome to QTrip</h1>
+      <p class="hero-subheading">
+        Explore the world with fantastic places to venture around
+      </p>
+      <input class="hero-input" placeholder="Search a City" />
+    </div>
+  </div>
+  </header>
 
-   <div class="hero-image d-flex"></div> 
 
-
-  <div class="container">
+  <div class="container-fluid">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
+      <!-- <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xxl-4 row-cols-xl-4"> -->
+        <div class="row"> 
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/bengaluru.jpg" alt="Bengaluru">
+            <div class="tile-text">
+              <h4 class="card-title">Bengaluru</h4>
+              <p class="card-text">100+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/kolkata.jpg" alt="Kolkata">
+            <div class="tile-text">
+              <h4 class="card-title">Kokata</h4>
+              <p class="card-text">25+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/goa.jpg" alt="Goa">
+            <div class="tile-text">
+              <h4 class="card-title">Goa</h4>
+              <p class="card-text">30+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/mumbai.jpg" alt="Mumbai">
+            <div class="tile-text">
+              <h4 class="card-title">Mumbai</h4>
+              <p class="card-text">60+ places</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xxl-4 row-cols-xl-4"> -->
+        <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/singapore.jpg" alt="Singapore">
+            <div class="tile-text">
+              <h4 class="card-title">Singapore</h4>
+              <p class="card-text">100+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/dubai.jpg" alt="Dubai">
+            <div class="tile-text">
+              <h4 class="card-title">Dubai</h4>
+              <p class="card-text">100+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/malaysia.jpg" alt="Malaysia">
+            <div class="tile-text">
+              <h4 class="card-title">Malaysia</h4>
+              <p class="card-text">100+ places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <div class="tile">
+            <img src="./assets/paris.jpg" alt="Paris">
+            <div class="tile-text">
+              <h4 class="card-title">Paris</h4>
+              <p class="card-text">100+ places</p>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
+
 
   <footer>
     <div class="container">© QTrip 2020</div>
@@ -39,6 +164,11 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   
 </body>
 

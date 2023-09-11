@@ -10,6 +10,7 @@ body {
 body {
   overflow-y: auto;
   min-height: 100vh;
+  border: 2px solid;
 }
 textarea:focus,
 input:focus {
@@ -39,9 +40,15 @@ footer {
 }
 
 .content {
-  padding: 20px 0px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  /* padding-left: 5px */
+  /* margin-left: 5px;
+  border-left: 5px; */
+  /* border-radius: 5px; */
 }
 
 /* ================================== */
@@ -51,14 +58,34 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  align-items: center;
+  overflow: hidden;
+  margin: 1rem;
+
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  /* border-radius: 10px; */
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  transition:transform .3s ease;
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.5);
+  object-fit: contain;
+  transform: scale(1.1);
+
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -78,22 +105,38 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: white;
 }
 .hero-input {
-  width: 80%;
+  width: 100%;
   height: 50px;
   padding: 16px;
   border-radius: 8px;
   border: none;
+  align-content: center;
 }
 
 .nav-link {
   margin-right: 36px;
+}
+.position-hero{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  top:30%;
 }
 
 /* ================================== */
@@ -103,14 +146,27 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  
+  height: 80%;
+  width: 100%;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.5);
+  /* object-fit: contain; */
+  transition:transform .3s ease;
+  /* transform: scale(); */
 }
 
 /* ================================== */
@@ -120,7 +176,10 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .adventure-card-image {
@@ -134,6 +193,7 @@ footer {
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
+  align-items: left;
 }
 
 @media only screen and (min-width: 768px) {
